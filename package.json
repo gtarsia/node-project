@@ -1,6 +1,6 @@
 {
   "name": "node-project",
-  "version": "0.1.0",
+  "version": "0.0.0",
   "main": "esm.js",
   "files": [
     "esm.js",
@@ -9,7 +9,7 @@
   "license": "MIT",
   "scripts": {
     "esw": "esw src",
-    "fix": "eslint --fix lib '**/*.js'",
+    "fix": "eslint --fix src '**/*.js'",
     "test": "nyc ava",
     "test:watch": "ava --watch"
   },
@@ -19,7 +19,9 @@
     "eslint": "^6.8.0",
     "eslint-config-airbnb-base": "^13.1.0",
     "eslint-plugin-import": "^2.16.0",
-    "eslint-watch-better": "^0.1.0",
+    "eslint-watch-better": "^0.1.0"
+  },
+  "dependencies": {
     "esm": "^3.2.25"
   }
 }
