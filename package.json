@@ -2,6 +2,7 @@
   "name": "node-project",
   "version": "0.0.0",
   "main": "esm.js",
+  "module": "src/FILE.js",
   "files": [
     "esm.js",
     "src"
