@@ -15,7 +15,7 @@
     "test:watch": "ava --watch"
   },
   "devDependencies": {
-    "ava": "^3.7.0",
+    "ava": "^3.9.0",
     "babel-eslint": "^10.1.0",
     "eslint": "^6.8.0",
     "eslint-config-airbnb-base": "^13.1.0",
