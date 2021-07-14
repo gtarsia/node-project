@@ -3,36 +3,33 @@
   "version": "0.0.0",
   "main": "esm.js",
   "module": "src/FILE.js",
-  "files": [
-    "esm.js",
-    "src"
-  ],
   "license": "MIT",
   "scripts": {
-    "esw": "esw src",
-    "fix": "eslint --fix src '**/*.js'",
+    "esw": "esw 'src/**/*.mjs'",
+    "fix": "eslint --fix src '**/*.mjs'",
     "test": "nyc ava",
     "test:watch": "ava --watch"
   },
   "devDependencies": {
+    "@babel/core": "^7.14.6",
+    "@babel/eslint-parser": "^7.14.7",
     "ava": "^3.15.0",
-    "@babel/eslint-parser": "^7.13.8",
-    "eslint": "^7.21.0",
+    "eslint": "^7.29.0",
     "eslint-config-airbnb-base": "^14.2.1",
     "eslint-plugin-import": "^2.22.1",
     "eslint-watch-better": "^0.1.2",
     "nyc": "^15.1.0"
   },
   "dependencies": {
-    "esm": "^3.2.25",
-    "dummee": "^1.2.0"
+    "@sendgrid/mail": "^7.4.5",
+    "bluebird": "^3.7.2",
+    "dummee": "^1.2.0",
+    "got": "^11.8.2",
+    "lodash": "^4.17.21"
   },
   "ava": {
     "files": [
-      "**/*.test.js"
-    ],
-    "require": [
-      "esm"
+      "**/*.test.mjs"
     ]
   }
 }

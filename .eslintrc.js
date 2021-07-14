@@ -17,9 +17,20 @@ module.exports = {
     'no-underscore-dangle': 'off',
     'object-curly-newline': ['error', {
       ObjectPattern: { minProperties: 5 },
-    }]
+    }],
+    'import/no-extraneous-dependencies': ['error', {'devDependencies': ['**/*.test.mjs', '**/*.spec.js']}],
+    'import/extensions': ['error', { 'mjs': 'always', 'js': 'always' }]
   },
+  parser: "@babel/eslint-parser",
   parserOptions: {
-    parser: 'babel-eslint',
+    requireConfigFile: false
   },
+  settings: {
+    "import/extensions": [".mjs", ".js"],
+    "import/resolver": {
+      "node": {
+        "extensions": [".mjs", ".js"]
+      }
+    }
+  }
 }
